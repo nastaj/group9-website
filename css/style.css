@@ -120,6 +120,11 @@ svg {
   transition: 0.3s all;
 }
 
+.grid-about {
+  display: grid;
+  grid-template-columns: 15fr 85fr;
+}
+
 /* *************** */
 /*      MENU       */
 /* *************** */
@@ -147,7 +152,7 @@ svg {
 
 .main-nav-link:link,
 .main-nav-link:visited {
-  color: #fff;
+  color: #eee;
   text-decoration: none;
 }
 
@@ -160,16 +165,29 @@ svg {
 /* *************** */
 /*   HERO SECTION  */
 /* *************** */
-.section-hero--background {
+.home-section-hero--background,
+.about-section-hero--background {
+  background-size: cover;
+  color: #eee;
+  height: 100vh;
+  margin-bottom: 3.2rem;
+}
+
+.home-section-hero--background {
   background-image: linear-gradient(
       rgba(31, 31, 31, 0.1),
       rgba(31, 31, 31, 0.1)
     ),
     url(../img/home/hero.jpg);
-  background-size: cover;
-  color: #fff;
-  height: 100vh;
-  margin-bottom: 3.2rem;
+}
+
+.about-section-hero--background {
+  background-image: linear-gradient(
+      rgba(31, 31, 31, 0.8),
+      rgba(31, 31, 31, 0.8)
+    ),
+    url(../img/about-us/about-us-hero.jpg);
+  margin-bottom: 2.4rem;
 }
 
 .section-hero {
@@ -357,4 +375,40 @@ svg {
 .footer-col a:visited {
   text-decoration: none;
   color: #495057;
+}
+
+/* *************** */
+/*  ABOUT SECTION  */
+/* *************** */
+.section-about {
+  margin-bottom: 2.4rem;
+}
+
+.about {
+  padding: 4.8rem 0;
+}
+
+.grid-about {
+  display: grid;
+  grid-template-columns: 10fr 90fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  transform: rotate(-90deg);
+}
+
+.about-description--box {
+  padding: 4.8rem 0;
+  border-left: 1px solid #000;
+  padding-left: 3.2rem;
+}
+
+.about-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
