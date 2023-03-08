@@ -2,7 +2,7 @@
 --- 01 TYPOGRAPHY SYSTEM
 
 - Font sizes (px):
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 44 / 52 / 62 / 74 / 86 / 98
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 - Font weights:
 Default: 400
@@ -100,8 +100,37 @@ svg {
   transform-origin: bottom left;
 }
 
+/* Headings */
+
+.heading-primary {
+  font-size: 6.2rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  color: #2b8a3e;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  color: #2b8a3e;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.heading-tertiary-onAccent {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
 /* Buttons */
-.btn,
 .btn:link,
 .btn:visited {
   color: #fff;
@@ -115,14 +144,31 @@ svg {
 }
 
 .btn:hover,
-.btn:visited {
+.btn:active {
   background-color: #572a00;
   transition: 0.3s all;
 }
 
-.grid-about {
+/* Grids / Flexes */
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
   display: grid;
-  grid-template-columns: 15fr 85fr;
+  column-gap: 6.4rem;
+  row-gap: 3.2rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-center--v {
+  align-items: center;
 }
 
 /* *************** */
@@ -202,12 +248,6 @@ svg {
   text-align: center;
 }
 
-.heading-primary {
-  font-size: 6.2rem;
-  font-weight: 700;
-  margin-bottom: 2.4rem;
-}
-
 .hero-paragraph {
   font-size: 2rem;
   font-weight: 400;
@@ -227,7 +267,7 @@ svg {
   margin: 0 auto;
 }
 
-.heading-tertiary {
+.subheading {
   color: #888;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
@@ -381,7 +421,8 @@ svg {
 /*  ABOUT SECTION  */
 /* *************** */
 .section-about {
-  margin-bottom: 2.4rem;
+  margin-bottom: 6.4rem;
+  border-bottom: 1px solid #eee;
 }
 
 .about {
@@ -411,4 +452,51 @@ svg {
 .about-description {
   font-size: 1.6rem;
   line-height: 1.6;
+}
+
+/* **************** */
+/*  THEMES SECTION  */
+/* **************** */
+.section-themes {
+  margin-bottom: 9.6rem;
+}
+
+.themes-heading--box {
+  width: 75%;
+  margin-bottom: 6.4rem;
+}
+
+.heading-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.theme-box {
+  padding: 6.4rem;
+}
+
+.themes-description--onAccent {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.themes-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #495057;
+}
+.themes-img-box img {
+  height: 35rem;
+  border-radius: 1rem;
+}
+
+.bg-accent {
+  background-image: linear-gradient(
+    to right,
+    rgb(43, 138, 62),
+    rgb(55, 178, 78)
+  );
+  border-radius: 1rem;
 }
