@@ -105,7 +105,7 @@ svg {
 .heading-primary {
   font-size: 6.2rem;
   font-weight: 700;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 
 .heading-secondary {
@@ -212,7 +212,8 @@ svg {
 /*   HERO SECTION  */
 /* *************** */
 .home-section-hero--background,
-.about-section-hero--background {
+.about-section-hero--background,
+.steps-section-hero--background {
   background-size: cover;
   color: #eee;
   height: 100vh;
@@ -236,6 +237,10 @@ svg {
   margin-bottom: 2.4rem;
 }
 
+.steps-section-hero--background {
+  background-image: linear-gradient(to right, rgb(43, 138, 62), #5c940d);
+}
+
 .section-hero {
   height: 75%;
 
@@ -252,6 +257,47 @@ svg {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 4.8rem;
+}
+
+/* Pagination for Steps */
+.steps-pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.steps-pagination a:link,
+.steps-pagination a:visited {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  padding: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #572a00;
+  background-color: #a5560e;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.steps-pagination a:hover,
+.steps-pagination a:active {
+  background-color: #572a00;
+  transition: 0.3s all;
+}
+
+.steps-pagination::after {
+  content: "";
+  background-color: #fff;
+  width: 75%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  z-index: 0;
 }
 
 /* **************** */
