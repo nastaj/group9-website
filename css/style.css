@@ -121,7 +121,7 @@ svg {
 }
 
 .heading-tertiary {
-  font-size: 3rem;
+  font-size: 3.6rem;
   color: #2b8a3e;
   font-weight: 700;
   margin-bottom: 1.6rem;
@@ -169,6 +169,7 @@ svg {
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 12rem;
 }
 
 .grid-center--v {
@@ -248,6 +249,7 @@ svg {
       rgba(31, 31, 31, 0.8)
     ),
     url(../img/steps/steps-hero.jpg);
+  margin-bottom: 9.6rem;
 }
 
 .section-hero {
@@ -560,4 +562,28 @@ svg {
     rgb(55, 178, 78)
   );
   border-radius: 1rem;
+}
+
+/* **************** */
+/*  STEPS SECTION  */
+/* **************** */
+.section-steps {
+  margin-bottom: 9.6rem;
+}
+
+.steps-img--box img {
+  width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.steps-text--box h4 {
+  font-size: 5.6rem;
+  margin-bottom: 1.6rem;
+  color: #adb5bd;
+}
+
+.steps-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
