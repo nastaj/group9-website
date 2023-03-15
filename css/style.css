@@ -108,6 +108,10 @@ svg {
   margin-bottom: 3.2rem;
 }
 
+.heading-primary span {
+  color: #69db7c;
+}
+
 .heading-secondary {
   font-size: 4.4rem;
   color: #2b8a3e;
@@ -238,7 +242,12 @@ svg {
 }
 
 .steps-section-hero--background {
-  background-image: linear-gradient(to right, rgb(43, 138, 62), #5c940d);
+  /* background-image: linear-gradient(to right, rgb(43, 138, 62), #5c940d); */
+  background-image: linear-gradient(
+      rgba(31, 31, 31, 0.8),
+      rgba(31, 31, 31, 0.8)
+    ),
+    url(../img/steps/steps-hero.jpg);
 }
 
 .section-hero {
@@ -260,6 +269,12 @@ svg {
 }
 
 /* Pagination for Steps */
+.steps-img {
+  display: block;
+  height: 20rem;
+  margin: 0 auto 4.8rem auto;
+}
+
 .steps-pagination {
   position: relative;
   display: flex;
