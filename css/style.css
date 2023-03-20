@@ -201,9 +201,15 @@ svg {
   gap: 2.4rem;
 }
 
+section .main-nav-link:link,
+section .main-nav-link:visited {
+  color: #eee;
+  text-decoration: none;
+}
+
 .main-nav-link:link,
 .main-nav-link:visited {
-  color: #eee;
+  color: #2b8a3e;
   text-decoration: none;
 }
 
@@ -216,6 +222,7 @@ svg {
 /* *************** */
 /*   HERO SECTION  */
 /* *************** */
+.section-hero--background,
 .home-section-hero--background,
 .about-section-hero--background,
 .steps-section-hero--background {
@@ -223,6 +230,10 @@ svg {
   color: #eee;
   height: 100vh;
   margin-bottom: 3.2rem;
+}
+
+.section-hero--background {
+  color: #495057;
 }
 
 .home-section-hero--background {
