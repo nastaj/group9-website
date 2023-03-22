@@ -116,8 +116,11 @@ svg {
   font-size: 4.4rem;
   color: #2b8a3e;
   font-weight: 700;
-  text-align: center;
   margin-bottom: 2rem;
+}
+
+.heading-secondary span {
+  color: #a5560e;
 }
 
 .heading-tertiary {
@@ -183,11 +186,19 @@ svg {
   display: flex;
   justify-content: space-between;
   margin: 0 9.6rem;
+
   padding: 3.2rem 0;
 }
 
-.logo {
+section .logo {
   color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo {
+  color: #2b8a3e;
   font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
@@ -269,6 +280,13 @@ section .main-nav-link:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 9.6rem;
+}
+
+.our-work-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
 }
 
 .hero-textbox {
@@ -326,6 +344,11 @@ section .main-nav-link:visited {
   position: absolute;
   top: 50%;
   z-index: 0;
+}
+
+/* Our Work Page */
+.hero-img-box img {
+  height: 50rem;
 }
 
 /* **************** */
@@ -538,6 +561,7 @@ section .main-nav-link:visited {
 .themes-heading--box {
   width: 75%;
   margin-bottom: 6.4rem;
+  text-align: center;
 }
 
 .heading-description {
