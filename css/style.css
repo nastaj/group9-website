@@ -116,7 +116,7 @@ svg {
   font-size: 4.4rem;
   color: #2b8a3e;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
 }
 
 .heading-secondary span {
@@ -177,6 +177,11 @@ svg {
 
 .grid-center--v {
   align-items: center;
+}
+
+/* Margins */
+.margin-m {
+  margin-bottom: 3.2rem;
 }
 
 /* *************** */
