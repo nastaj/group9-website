@@ -143,11 +143,11 @@ svg {
   color: #fff;
   text-decoration: none;
   font-size: 1.6rem;
-  letter-spacing: 3px;
+  letter-spacing: 0.3rem;
   background-color: #a5560e;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 5px;
-  padding: 1.6rem 3.2rem;
+  border-radius: 0.5rem;
+  padding: 1.6rem 2.4rem;
 }
 
 .btn:hover,
@@ -291,7 +291,7 @@ section .main-nav-link:visited {
 .our-work-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 6.4rem;
+  column-gap: 9.6rem;
 }
 
 .hero-textbox {
@@ -302,6 +302,7 @@ section .main-nav-link:visited {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 4.8rem;
+  line-height: 1.6;
 }
 
 /* Pagination for Steps */
@@ -612,7 +613,8 @@ section .main-nav-link:visited {
 }
 
 .steps-img--box img {
-  width: 35rem;
+  width: auto;
+  height: 35rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -626,4 +628,68 @@ section .main-nav-link:visited {
 .steps-description {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/* SHOWCASE SECTION */
+.section-showcase {
+  margin-top: 9.6rem;
+}
+
+.testimonial {
+  gap: 3.2rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.04);
+  padding: 4.8rem 0;
+  margin-bottom: 3.2rem;
+}
+
+.testimonial-text-box {
+  width: 60rem;
+  position: relative;
+}
+
+.testimonial-img-box img {
+  height: 20rem;
+  border-radius: 4px;
+}
+
+.testimonial-quotes {
+  font-size: 4.8rem;
+  position: absolute;
+  top: -5rem;
+}
+
+.ph-fill {
+  color: #255903;
+}
+
+.testimonial-description {
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.6;
+  color: #343a40;
+}
+
+.testimonial-client {
+  color: #495057;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.testimonial-details {
+  font-size: 1.8rem;
+}
+
+.gallery {
+  gap: 1.6rem;
+  margin-bottom: 9.6rem;
+}
+
+.gallery img {
+  height: 25rem;
+  transition: all 0.1s;
+}
+
+.gallery img:hover {
+  transform: scale(1.5);
 }
