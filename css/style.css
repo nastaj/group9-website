@@ -159,6 +159,29 @@ svg {
   transition: 0.3s all;
 }
 
+.btn-submit {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  background-color: #a5560e;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border: none;
+  border-radius: 100rem;
+  padding: 1.6rem 2.4rem;
+  cursor: pointer;
+}
+
+.btn-submit:hover,
+.btn-submit:active {
+  background-color: #572a00;
+  transition: 0.3s all;
+}
+
+.btn-submit:active {
+  transform: scale(0.75);
+}
+
 /* Grids / Flexes */
 
 .flex-center {
@@ -738,6 +761,77 @@ section .main-nav-link:visited {
   line-height: 1.8;
 }
 
+/* ***************** */
+/* APPLY SECTION     */
+/* ***************** */
+
+.section-apply {
+  margin-top: 4.8rem;
+}
+.section-apply .heading-tertiary {
+  text-align: center;
+}
+
+.section-apply .heading-description {
+  font-size: 1.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.form-container {
+  background-color: #37b24d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.4rem;
+}
+
+.form-apply {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1.6rem;
+  padding: 4.8rem;
+  background-color: #dee2e6;
+  border-radius: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.form-apply label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #495057;
+}
+
+.input-field {
+  border: none;
+  border-radius: 1.6rem;
+  padding: 1.2rem 2.4rem;
+}
+
+#institution,
+#email {
+  width: 100%;
+}
+
+#email {
+  margin-bottom: 1.2rem;
+}
+
+.form-apply div:nth-child(3),
+.form-apply div:nth-child(4),
+.form-apply div:nth-child(5) {
+  grid-column: 1 / -1;
+}
+
+.form-apply div:nth-child(5) {
+  justify-self: center;
+}
+
+.form-container p {
+  font-size: 1.6rem;
+  color: #255903;
+}
 /* **************************** */
 /* BELOW 544px (Phones) */
 /* **************************** */
