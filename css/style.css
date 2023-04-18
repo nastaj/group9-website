@@ -244,7 +244,8 @@ section .main-nav-link:visited {
 .section-hero--background,
 .home-section-hero--background,
 .about-section-hero--background,
-.steps-section-hero--background {
+.steps-section-hero--background,
+.benefits-section-hero--background {
   background-size: cover;
   color: #eee;
   height: 100vh;
@@ -257,8 +258,8 @@ section .main-nav-link:visited {
 
 .home-section-hero--background {
   background-image: linear-gradient(
-      rgba(31, 31, 31, 0.1),
-      rgba(31, 31, 31, 0.1)
+      rgba(31, 31, 31, 0.5),
+      rgba(31, 31, 31, 0.5)
     ),
     url(../img/home/hero.jpg);
 }
@@ -279,6 +280,15 @@ section .main-nav-link:visited {
       rgba(31, 31, 31, 0.8)
     ),
     url(../img/steps/steps-hero.jpg);
+  margin-bottom: 9.6rem;
+}
+
+.benefits-section-hero--background {
+  background-image: linear-gradient(
+      rgba(31, 31, 31, 0.8),
+      rgba(31, 31, 31, 0.8)
+    ),
+    url(../img/benefits/hero.jpg);
   margin-bottom: 9.6rem;
 }
 
@@ -695,6 +705,37 @@ section .main-nav-link:visited {
 
 .gallery img:hover {
   transform: scale(1.5);
+}
+
+/* ***************** */
+/* BENEFITS SECTION  */
+/* ***************** */
+.benefits-icon {
+  font-size: 6.4rem;
+  color: #b2f2bb;
+  margin-right: 2.4rem;
+}
+
+.section-benefits {
+  margin-bottom: 9.6rem;
+}
+
+.benefits-img--box img {
+  width: auto;
+  height: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits-text--box h4 {
+  font-size: 5.6rem;
+  margin-bottom: 1.6rem;
+  color: #adb5bd;
+}
+
+.benefits-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
 
 /* **************************** */
