@@ -10,27 +10,29 @@ Bold: 700
 
 - Line heights:
 Default: 1
-Small: 
-Medium:
 Paragraph default: 1.6
 
 - Letter spacing:
-
+Buttons: 1px
+Subheading: 0.75px
 
 --- 02 COLORS
 
-- Primary: 
-- Tints: 
-- Shades: 
-- Grays: 
+- Primary: #37b24d
+- Tints: #69db7c #b2f2bb
+- Shades: #2f9e44 #2b8a3e
+- Accent: #a5560e
+- Grays: #212529 #343a40 #495057 #adb5bd  #dee2e6
 
 --- 03 SHADOWS
 
 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075)
 
 --- 04 BORDER-RADIUS
-Default:
-Medium: 
+
+Default: 5px
+Medium: 1rem
+Large: 100rem
 
 --- 05 WHITESPACE
 
@@ -145,12 +147,12 @@ svg {
   color: #fff;
   text-decoration: none;
   font-size: 1.6rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1px;
   font-weight: 700;
   background: none;
   border: 1px solid #fff;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 0.5rem;
+  border-radius: 5px;
   padding: 1.6rem 2.4rem;
   transition: 0.3s all;
 }
@@ -176,7 +178,7 @@ svg {
   color: #fff;
   text-decoration: none;
   font-size: 1.6rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1px;
   font-weight: 700;
   background-color: #a5560e;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -298,6 +300,7 @@ section .main-nav-link:visited {
 }
 
 .home-section-hero--background {
+  background-attachment: fixed;
   background-image: linear-gradient(
       rgba(31, 31, 31, 0.5),
       rgba(31, 31, 31, 0.5)
@@ -306,6 +309,7 @@ section .main-nav-link:visited {
 }
 
 .about-section-hero--background {
+  background-attachment: fixed;
   background-image: linear-gradient(
       rgba(31, 31, 31, 0.8),
       rgba(31, 31, 31, 0.8)
@@ -315,6 +319,7 @@ section .main-nav-link:visited {
 }
 
 .steps-section-hero--background {
+  background-attachment: fixed;
   /* background-image: linear-gradient(to right, rgb(43, 138, 62), #5c940d); */
   background-image: linear-gradient(
       rgba(31, 31, 31, 0.8),
@@ -325,6 +330,7 @@ section .main-nav-link:visited {
 }
 
 .benefits-section-hero--background {
+  background-attachment: fixed;
   background-image: linear-gradient(
       rgba(31, 31, 31, 0.8),
       rgba(31, 31, 31, 0.8)
